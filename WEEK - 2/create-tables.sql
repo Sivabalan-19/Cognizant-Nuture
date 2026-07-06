@@ -1,9 +1,11 @@
+-- Create Tables for Banking System
 
 CREATE TABLE Customers (
     CustomerID NUMBER PRIMARY KEY,
     Name VARCHAR2(100),
     DOB DATE,
     Balance NUMBER,
+    IsVIP VARCHAR2(5) DEFAULT 'FALSE',
     LastModified DATE
 );
 
@@ -42,4 +44,11 @@ CREATE TABLE Employees (
     Salary NUMBER,
     Department VARCHAR2(50),
     HireDate DATE
-); 
+);
+
+CREATE TABLE ErrorLog (
+    LogID NUMBER PRIMARY KEY,
+    ErrorMessage VARCHAR2(500),
+    ErrorDate DATE,
+    ProcedureName VARCHAR2(100)
+);
