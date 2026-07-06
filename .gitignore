@@ -1,0 +1,12 @@
+*.class
+*.jar
+*.exe
+.DS_Store
+out/
+bin/
+build/
+dist/
+target/
+.idea/
+*.iml
+.vscode/
